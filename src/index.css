@@ -1,13 +1,86 @@
-body {
+/* CSS reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: 'Inter', 'sans-serif';
+}
+
+/* Styling the main navigation */
+
+.navbar, .navbar-logo, .main-content{
+  display: flex;
+}
+
+.navbar{
+  background-color:#21222A;
+  padding: 1.9375rem 1.625rem;
+}
+
+.main-content, .navbar{
+  justify-content: space-between;
+}
+
+.navbar-logo img{
+  width: 1.8125rem;
+  height: 1.8125rem;
+}
+
+.logo-title{
+  font-size: 1.390625rem;
+  color: #61DAFB;
+  padding-left: 0.425rem;
+}
+
+.logo-title, .main-content-title{
+  font-weight: 700;
+}
+
+.navbar-subtitle{
+  color: #DEEBF8;
+  font-weight: 600;
+}
+
+.navbar-subtitle, ul li{
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.logo-title, .navbar-subtitle, .main-content-title, ul li{
+  font-style: normal;
+}
+
+/* Styling the main content */
+.main-content{
+  background-color: #282D35;
+  min-height: 43.75rem;
+  padding: 3.5625rem 0 0 2.150rem;
+}
+
+.main-content-title{
+  font-size: 2.4375rem;
+}
+
+.main-content-title, ul li{
+  color: #fff;
+}
+
+ul{
+  padding: 2.875rem 0 0 2rem;
+}
+
+ul li::marker{
+  font-size: 1.5rem;
+  color: #61DAFB;
+  font-weight: bold;
+}
+
+ul li{
+  font-weight: 400;
 }
