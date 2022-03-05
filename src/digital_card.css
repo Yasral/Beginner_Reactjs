@@ -1,0 +1,136 @@
+/* CSS reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Inter', 'sans-serif';
+}
+
+/* Styling the wrapper */
+.digital-card{
+    background-color: #23252C;
+    max-width: 34.375rem;
+    padding: 2.75rem 7.25rem;
+    margin: 0 auto;
+}
+
+.digital-card-mini-wrapper, .informations, .custom-buttons{
+    background-color: #1A1B21;
+    padding: 0 2.25rem;
+}
+
+/* Styling the info section */
+.informations{
+    text-align: center;
+}
+
+.informations h3{
+    padding-top: 1.3125rem;
+    font-weight: 700;
+    font-size: 1.5625rem;
+}
+
+.informations h3, .informations h6, .blue span, .about-title, .about-description, .interest-title, .interest-description{
+    color: #fff;
+}
+
+.informations h5, .informations h6, .about-description, .interest-description{
+    font-weight: 400;
+}
+
+.informations h5{
+    color: #F3BF99;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+.informations h6{
+    padding-top: 0.5625rem;
+}
+
+.informations h6, .about-description, .interest-description{
+    font-size: 0.640625rem;
+}
+
+.custom-buttons{
+    justify-content: space-between;
+    padding-top: 0.9375rem;
+}
+
+.custom-buttons, .custom-buttons button, ul, .footer-section{
+    display: flex;
+}
+
+.custom-buttons button{
+    width: 7.1875rem;
+    height: 2.125;
+    padding: 0.5625rem 0.8125rem;
+    justify-content: center;
+    align-items: center;
+    border: 0.0625rem solid #D1D5DB;
+    box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+}
+
+.custom-buttons button:hover{
+    cursor: pointer;
+}
+
+.custom-buttons button img{
+    margin: 0 0.5rem;
+}
+
+.custom-buttons button span{
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.white span{
+    color: #374151
+}
+
+.blue{
+    background-color: #5093E2;
+}
+
+/* Styling the about section */
+.about-title{
+    padding-top: 2.0625rem;
+}
+
+.about-title, .interest-title{
+    font-size: 1rem;
+}
+
+.about-description, .interest-description{
+    padding-top: 0.3125rem;
+    line-height: 0.959375rem;
+}
+
+.interest-title{
+    padding-top: 1.6875rem;
+}
+
+.interest-description{
+    padding-bottom: 3rem;
+}
+
+/* Styling the footer */
+.footer-section{
+    background-color: #161619;
+    border-radius: 0 0 0.625rem 0.625rem;
+    padding: 1.25rem 0;
+    justify-content: center;
+}
+
+ul{
+    width: 70%;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
